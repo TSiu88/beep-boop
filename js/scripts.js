@@ -11,6 +11,40 @@ function numberCheck(input){
   }
 }
 
+function numberConverter(input){
+  var numberArray = [];
+  for(var i=0; i <=input; i++){
+
+    var digitArray = i.toString().split("");
+    // var foundReplacement = false;
+    // for(var j=0; j < digitArray.length; j++){
+
+    //   if(digitArray[j] === "2"){
+    //     foundReplacement = true;
+    //     numberArray[i] = "Boop!";
+    //   }
+    //   else if(digitArray[j] === "1" && !digitArray.includes("2")){
+    //     foundReplacement = true;
+    //     numberArray[i] = "Beep!";
+    //   }
+    // }
+    // if(foundReplacement === false){
+    //   numberArray[i] = i;
+    // }
+
+    if(digitArray.includes("2")){
+      numberArray[i] = " Boop!";
+    }
+    else if(digitArray.includes("1")){
+      numberArray[i] = " Beep!";
+    }
+    else{
+      numberArray[i] = " " +i;
+    }
+  }
+  return numberArray;
+}
+
 //USER INTERFACE LOGIC HERE
 $(document).ready(function(){
   $("#inputForm").submit(function(event){
@@ -18,33 +52,17 @@ $(document).ready(function(){
 
     var userInput = $("#inputNumber").val();
     var isANumber = numberCheck(userInput);
-    var numberArray = [];
+    
 
     if (isANumber){
-      
-      for(var i=0; i <=userInput; i++){
-
-        var digitArray = i.toString().split("");
-        var foundReplacement = false;
-        for(var j=0; j < digitArray.length && foundReplacement === false; j++){
-          
-          if(digitArray[j] === "1"){
-            foundReplacement = true;
-            numberArray.push("Beep!");
-          }
-        }
-        if(foundReplacement === false){
-          numberArray.push(i);
-        }
-      }
-
+      var convertedArray = numberConverter(userInput);
     }
     else{
       alert("No number inputted.  Please enter a number in space provided.");
     }
 
     $(".outputArea").show();
-    $("#outputString").text(numberArray);
+    $("#outputString").text(convertedArray);
 
   });
 });
