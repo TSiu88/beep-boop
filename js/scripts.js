@@ -1,5 +1,6 @@
 //BUSINESS LOGIC HERE
 
+//Check if numerical or not
 function numberCheck(input){
   var regex = /^[0-9]+$/;
   if (input.match(regex)){
@@ -22,7 +23,19 @@ $(document).ready(function(){
     if (isANumber){
       
       for(var i=0; i <=userInput; i++){
-        numberArray.push(i);
+
+        var digitArray = i.toString().split("");
+        var foundReplacement = false;
+        for(var j=0; j < digitArray.length && foundReplacement === false; j++){
+          
+          if(digitArray[j] === "1"){
+            foundReplacement = true;
+            numberArray.push("Beep!");
+          }
+        }
+        if(foundReplacement === false){
+          numberArray.push(i);
+        }
       }
 
     }
@@ -31,7 +44,7 @@ $(document).ready(function(){
     }
 
     $(".outputArea").show();
-    $("#output").text(numberArray);
+    $("#outputString").text(numberArray);
 
   });
 });
