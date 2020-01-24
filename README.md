@@ -1,6 +1,6 @@
-# _Assignment Name_
+# _Beep Boop_
 
-#### _Brief desc of Project, 01.10.2020_
+#### _Week 3 Independent Friday Assignment for Epicodus, 01.24.2020_
 
 #### By _**Tiffany Siu**_
 
@@ -11,21 +11,22 @@ _Detailed desc w/ purpose/usage, what does, motivation to create, why exists, ot
 ## Setup/Installation Requirements
 
 ### Requirements to Run
-* _Go to the GitHub Pages site at:_
-* _tsiu88.github.io/portfolio-landing_
+* _Web Browser_
 
 ### Other Resources Used
-* _or clone repository from Github_
-* _Open portfolio-landing.html file in browser_
+* _JQuery_
+* _Bootstrap_
 
-_Other things need to run like servers, databases, code, how to install and use program_
+_This page may be viewed by cloning the [repository](https://github.com/TSiu88/programming-quiz.git) from my [GitHub page](https://github.com/TSiu88) and opening the index.html file in any web browser._
 
 ## Technologies Used
 
 * _HTML_
 * _CSS_
-* _Markdown_
+* _Javascript_
+* _JQuery_
 * _Bootstrap_
+* _Markdown_
 
 ## Notable Features
 _features that make project stand out_
@@ -66,7 +67,7 @@ _There are currently no known bugs in this program_
 
 ## Support and contact details
 
-_If there are any question or concerns please contact me at my email._
+_If there are any question or concerns please contact me at my [email](mailto:tsiu88@gmail.com). Thank you._
 
 ### License
 
