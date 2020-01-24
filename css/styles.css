@@ -2,7 +2,26 @@ h1{
   text-align: center;
 }
 
+.jumbotron{
+  font-family: monospace;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.inputArea{
+  margin: 30px 30px 30px 30px;
+}
+
+.btn{
+  margin-right: 25px;
+}
+
 .outputArea{
   display: none;
   word-wrap: break-word;
+  font-family: monospace;
+}
+
+.outputArea p{
+  font-weight: bold;
 }

@@ -6,7 +6,7 @@
 
 ## Description
 
-_Detailed desc w/ purpose/usage, what does, motivation to create, why exists, other info for users/developers to have_
+_This site is the Week 3 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  It takes in an integer number from user input and returns a string of numbers counting up to the inputted number starting at 0.  The program would also check if the number includes specific digits and replace them with another string.  Here a "3" would be replaced with "I'm sorry Dave. I can't do that.", a "2" would be replaced with "Boop!", and a "1" would be replaced with "Beep!".  There is also a priority system so that it would know which replacement to use if the number being printed contains multiple digits to be replaced (the preference being 3 > 2 > 1 in this program).  This program can also display the resulting output in reverse and give the user name that was inputted in instead of the default "Dave" when 3's are replaced.  This assignment specifically practiced writing specifications prior to coding and manipulating arrays and loops._
 
 ## Setup/Installation Requirements
 
@@ -17,7 +17,7 @@ _Detailed desc w/ purpose/usage, what does, motivation to create, why exists, ot
 * _JQuery_
 * _Bootstrap_
 
-_This page may be viewed by cloning the [repository](https://github.com/TSiu88/programming-quiz.git) from my [GitHub page](https://github.com/TSiu88) and opening the index.html file in any web browser._
+_This page may be viewed by cloning the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88) and opening the **index.html** file in any web browser._
 
 ## Technologies Used
 
@@ -63,9 +63,6 @@ _features that make project stand out_
 
 ## Screenshots
 _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_
-
-## Test Case Example
-_describe and show how to run tests with `code` examples}_
 
 ## Known Bugs
 

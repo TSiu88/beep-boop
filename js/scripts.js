@@ -39,6 +39,7 @@ function numberConverter(input, name){
   return numberArray;
 }
 
+//Reverse order of output array
 function reverseArray(array){
   return array.reverse();
 }
@@ -61,16 +62,18 @@ $(document).ready(function(){
     }
 
     $(".outputArea").show();
+    $("#outputString").text("");
+    $("#upDown").text("");
     
     var buttonId = this.id;
     if (buttonId === "reverseButton"){
       var reversedArray = reverseArray(convertedArray);
-      $("#outputString").text("");
       $("#outputString").text(reversedArray);
+      $("#upDown").text("DOWN from");
     }
     else if(buttonId === "submitButton"){
-      $("#outputString").text("");
       $("#outputString").text(convertedArray);
+      $("#upDown").text("UP to");
     }
 
   });

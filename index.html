@@ -11,7 +11,7 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Beep Boop!</h1>
-        <h2>I am a Computer. Beep! Boop! Giving a count of numbers up to the input. No surprise output here. Beep! Boop!</h2>
+        <h2>I am a Computer. Beep! Boop! Giving a count of numbers <span id=upDown>to</span> the input. No surprise output here. Beep! Boop!</h2>
       </div>
       
       <div class="inputArea">
@@ -27,17 +27,20 @@
             <input type="number" name="userInput" class="form-control" id="inputNumber">
           </div>
 
-          <button type="submit" class="btn" id="submitButton">Receive Output. Beep Boop!</button>
-          <button type="submit" class="btn" id="reverseButton">!Boop Beep Output Reverse</button>
+          <button type="submit" class="btn btn-info" id="submitButton">Receive Output. Beep Boop!</button>
+          <button type="submit" class="btn btn-danger" id="reverseButton">!Boop Beep Output Reverse</button>
         </form>
 
       </div> <!--End of inputArea-->
 
       <div class="outputArea">
-        <h3>Output:</h3>
-        <p>Here is the range of numbers you requested: </p>
-        <p><span id="outputString"></span></p>
-        <p>This output is completely, absolutely correct.</p>
+        <div class="well">
+          <h3>Output:</h3>
+          <h4>Here is the range of numbers you requested: </h4>
+          <p><span id="outputString"></span></p>
+          <h4>This output is completely, absolutely correct.  Just a string of numbers.  Nothing strange here.</h4>
+        </div>
+        
       </div>
 
     </div> <!--End of container-->
