@@ -35,7 +35,7 @@ _features that make project stand out_
 
 * _The program gives an alert and does nothing if user inputs a non-numeric number character_
   * _Example Input: abc_
-  * _Example Output: alert: No number inputted_
+  * _Example Output: alert: "No number inputted. Please enter a number in space provided."_
 * _The program returns a range of numbers from 0 to the users inputted number_
   * _Example Input: "4"_
   * _Example Output: "0, 1, 2, 3, 4"_
