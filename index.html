@@ -11,34 +11,47 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Beep Boop!</h1>
-        <h3>I am a Computer. Beep! Boop! Giving a count of numbers <span class=upDown>to</span> the input. No surprise output here. Beep! Boop!</h3>
+        <h3>I am a Computer. Beep Boop! Giving a count of numbers <span class=upDown>to</span> the input. No surprise output here. Beep Boop!</h3>
       </div>
       
       <div class="inputArea">
-        <form id="inputForm">
+        <div class="inputSection">
+          <form id="inputForm">
 
-          <div class="form-group">
-            <label for="name">Input human name here:</label>
-            <input type="text" name="nameInput" class="form-control" id="name">
-          </div>
-
-          <div class="form-group">
-            <label for="input">Input a number to receive a range to that number!</label>
-            <input type="number" name="userInput" class="form-control" id="inputNumber">
-          </div>
-
-          <button type="submit" class="btn btn-info wiggle" id="submitButton">Receive Output. Beep Boop!</button>
-          <button type="submit" class="btn btn-danger wiggle" id="reverseButton">!Boop Beep Output Reverse</button>
-        </form>
-
+            <div class="form-group">
+              <label for="name">Input human name here:</label>
+              <input type="text" name="nameInput" class="form-control" id="name">
+            </div>
+  
+            <div class="form-group">
+              <label for="input">Input a number to receive a range to that number!</label>
+              <input type="number" name="userInput" class="form-control" id="inputNumber">
+            </div>
+  
+            <button type="submit" class="btn btn-info wiggle" id="submitButton">Receive Output. Beep Boop!</button>
+            <button type="submit" class="btn btn-danger wiggle" id="reverseButton">!Boop Beep Output Reverse</button>
+          </form>
+        </div> 
+        <div class="pictureSection">
+          <img src="img/robot.png" alt="Robot" title="Candy...candy...candy...">
+        </div>
+         
       </div> <!--End of inputArea-->
-
+      
       <div class="outputArea">
+        <br>
         <div class="well">
           <h2>Output:</h2>
+
           <h3>Here is the range of numbers you requested <span class="upDown"></span> <span id="number"></span>:</h3>
+
           <p><span id="outputString"></span></p>
+
           <h4>This output is completely, absolutely correct.  Just a string of numbers.  Nothing strange here.</h4>
+          <blockquote>
+            <p>"Glitchy weirdness is a term of endearment, right?"</p>
+            <footer>CL4P-TP</footer>
+          </blockquote>
         </div>
         
       </div>

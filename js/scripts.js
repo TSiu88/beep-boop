@@ -25,13 +25,13 @@ function numberConverter(input, name){
 
     if(digitArray.includes("3")){
       sorryText = " I'm sorry, " + name + ".  I'm afraid I can't do that.";
-      numberArray[i] = sorryText.fontcolor("green");
+      numberArray[i] = sorryText.fontcolor("#33334d");
     }
     else if(digitArray.includes("2")){
-      numberArray[i] = " Boop!".fontcolor("blue");
+      numberArray[i] = " Boop!".fontcolor("#0000ff");
     }
     else if(digitArray.includes("1")){
-      numberArray[i] = " Beep!".fontcolor("red");
+      numberArray[i] = " Beep!".fontcolor("#b30000");
     }
     else{
       numberArray[i] = " " +i;

@@ -41,6 +41,14 @@ label{
   color: whitesmoke;
 }
 
+img{
+  height: 200px;
+}
+
+blockquote footer{
+  color:  #f0f0f5;
+}
+
 .jumbotron{
   font-family: monospace;
   padding-top: 38px;
@@ -48,6 +56,7 @@ label{
   margin-top: 15px;
   background-color: #85c0f9;
   border: #44749d groove 4px;
+
 }
 
 .jumbotron h1{
@@ -61,6 +70,19 @@ label{
 
 .inputArea{
   margin: 30px 30px 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputSection{
+  width: 70%;
+  justify-content: flex-start;
+}
+
+.pictureSection{
+  width: 29%;
+  justify-content: flex-end;
 }
 
 .form-group:hover{
@@ -74,7 +96,7 @@ label{
 }
 
 .btn{
-  margin-right: 25px;
+  margin-right: 10px;
   margin-bottom: 15px;
   border-width: 4px;
 }
@@ -114,8 +136,6 @@ label{
     transform: translateX(0);
   }
 }
-
-
 
 .wiggle:hover{
   animation: wiggle 1s ease;
