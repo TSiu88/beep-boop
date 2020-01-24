@@ -61,20 +61,23 @@ $(document).ready(function(){
       alert("No number inputted.  Please enter a number in space provided.");
     }
 
-    $(".outputArea").show();
+    $(".outputArea").slideDown();
     $("#outputString").text("");
-    $("#upDown").text("");
+    $(".upDown").text("");
+    $("#number").text("");
     
     var buttonId = this.id;
     if (buttonId === "reverseButton"){
       var reversedArray = reverseArray(convertedArray);
       $("#outputString").text(reversedArray);
-      $("#upDown").text("DOWN from");
+      $(".upDown").text("DOWN from");
     }
     else if(buttonId === "submitButton"){
       $("#outputString").text(convertedArray);
-      $("#upDown").text("UP to");
+      $(".upDown").text("UP to");
     }
+    $("#number").text(userInput);
+
 
   });
 });

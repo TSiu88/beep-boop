@@ -1,19 +1,64 @@
+html{
+  background-image: linear-gradient(to bottom right, #5d6e9e ,#c6d4e1);
+}
+body{
+  background-color: transparent;
+}
 h1{
   text-align: center;
+  text-shadow: aliceblue 2px 2px;
+}
+
+h2{
+  font-weight: bold;
+  color: #abc3c9;
+  text-shadow: #601a4a 2px 2px;
+}
+
+h3{
+  font-style: italic;
+  color: #ebe7e0;
+}
+
+h4{
+  color: #2a385b;
 }
 
 .jumbotron{
   font-family: monospace;
   padding-top: 38px;
   padding-bottom: 38px;
+  margin-top: 15px;
+  background-color: #85c0f9;
+  border: #44749d groove 4px;
+}
+
+.jumbotron h1{
+  color: #0F2080;
+  font-weight: bold;
+}
+
+.jumbotron h3{
+  color: #6f7498;
 }
 
 .inputArea{
   margin: 30px 30px 30px 30px;
 }
 
+.form-group:hover{
+  background-color: cadetblue;
+  padding: 5px 5px 5px 5px;
+}
+
+.form-control{
+  margin-left: 10px;
+  width: 630px;
+}
+
 .btn{
   margin-right: 25px;
+  margin-bottom: 15px;
 }
 
 .outputArea{
@@ -24,4 +69,12 @@ h1{
 
 .outputArea p{
   font-weight: bold;
+  font-size: 16px;
+  color: #f9f4ec;
+}
+
+.well{
+  background-color: #a95aa1;
+  border-radius: 10px;
+  border: #601a4a ridge 3px;
 }
