@@ -24,13 +24,14 @@ function numberConverter(input, name){
     var digitArray = i.toString().split("");
 
     if(digitArray.includes("3")){
-      numberArray[i] = " I'm sorry, " + name + ".  I'm afraid I can't do that.";
+      sorryText = " I'm sorry, " + name + ".  I'm afraid I can't do that.";
+      numberArray[i] = sorryText.fontcolor("green");
     }
     else if(digitArray.includes("2")){
-      numberArray[i] = " Boop!";
+      numberArray[i] = " Boop!".fontcolor("blue");
     }
     else if(digitArray.includes("1")){
-      numberArray[i] = " Beep!";
+      numberArray[i] = " Beep!".fontcolor("red");
     }
     else{
       numberArray[i] = " " +i;
@@ -52,7 +53,7 @@ $(document).ready(function(){
     var userName = $("#name").val();
     var userInput = $("#inputNumber").val();
     var isANumber = numberCheck(userInput);
-    
+    var outputText = "";
 
     if (isANumber){
       var convertedArray = numberConverter(userInput, userName);
@@ -69,11 +70,13 @@ $(document).ready(function(){
     var buttonId = this.id;
     if (buttonId === "reverseButton"){
       var reversedArray = reverseArray(convertedArray);
-      $("#outputString").text(reversedArray);
+      outputText = reversedArray.join();
+      $("#outputString").append(outputText);
       $(".upDown").text("DOWN from");
     }
     else if(buttonId === "submitButton"){
-      $("#outputString").text(convertedArray);
+      outputText = convertedArray.join();
+      $("#outputString").append(outputText);
       $(".upDown").text("UP to");
     }
     $("#number").text(userInput);

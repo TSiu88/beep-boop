@@ -1,9 +1,22 @@
-html{
-  background-image: linear-gradient(to bottom right, #5d6e9e ,#c6d4e1);
-}
 body{
-  background-color: transparent;
+  background-image: linear-gradient(to bottom right, #4E1F6F, #610345, #2a385b, #44749d, #c6d4e1);
+  background-size: 300% 300%;
+  animation: gradient 15s ease infinite;
+
 }
+
+@keyframes gradient{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
 h1{
   text-align: center;
   text-shadow: aliceblue 2px 2px;
@@ -24,6 +37,10 @@ h4{
   color: #2a385b;
 }
 
+label{
+  color: whitesmoke;
+}
+
 .jumbotron{
   font-family: monospace;
   padding-top: 38px;
@@ -39,7 +56,7 @@ h4{
 }
 
 .jumbotron h3{
-  color: #6f7498;
+  color: #2a385b;
 }
 
 .inputArea{
@@ -53,12 +70,13 @@ h4{
 
 .form-control{
   margin-left: 10px;
-  width: 630px;
+  width: 90%;
 }
 
 .btn{
   margin-right: 25px;
   margin-bottom: 15px;
+  border-width: 4px;
 }
 
 .outputArea{
@@ -77,4 +95,29 @@ h4{
   background-color: #a95aa1;
   border-radius: 10px;
   border: #601a4a ridge 3px;
+}
+
+@keyframes wiggle{
+  20%{
+    transform: translateX(3px);
+  }
+  40%{
+    transform: translateX(-3px);
+  }
+  60%{
+    transform: translateX(2px);
+  }
+  80%{
+    transform: translateX(-1px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+
+.wiggle:hover{
+  animation: wiggle 1s ease;
+  animation-iteration-count: 1;
 }
