@@ -11,28 +11,17 @@ function numberCheck(input){
   }
 }
 
+//Replace digits with strings if fits requirements
 function numberConverter(input){
   var numberArray = [];
   for(var i=0; i <=input; i++){
 
     var digitArray = i.toString().split("");
-    // var foundReplacement = false;
-    // for(var j=0; j < digitArray.length; j++){
 
-    //   if(digitArray[j] === "2"){
-    //     foundReplacement = true;
-    //     numberArray[i] = "Boop!";
-    //   }
-    //   else if(digitArray[j] === "1" && !digitArray.includes("2")){
-    //     foundReplacement = true;
-    //     numberArray[i] = "Beep!";
-    //   }
-    // }
-    // if(foundReplacement === false){
-    //   numberArray[i] = i;
-    // }
-
-    if(digitArray.includes("2")){
+    if(digitArray.includes("3")){
+      numberArray[i] = " I'm sorry, Dave.  I'm afraid I can't do that."
+    }
+    else if(digitArray.includes("2")){
       numberArray[i] = " Boop!";
     }
     else if(digitArray.includes("1")){

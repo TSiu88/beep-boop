@@ -50,10 +50,10 @@ _features that make project stand out_
   * _Example Output: "0, Beep!, Boop!, I'm sorry..., 4"_
 * _The program prioritizes replacing "2" and "3" over replacing "1" if both digits are in the same number_
   * _Example Input: "21"_
-  * _Example Output: "0, Beep!, Boop!, ..., ..., Boop!"_
+  * _Example Output: "0, Beep!, Boop!, I'm sorry..., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry..., Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!"_
 * _The program prioritizes replacing "3" over replacing "2" if both digits are in the same number_
   * _Example Input: "23"_
-  * _Example Output: "0, Beep!, Boop!, ..., ..., I'm sorry..."_
+  * _Example Output: "0, Beep!, Boop!, I'm sorry..., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry..., Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, I'm sorry..."_
 
 ## Screenshots
 _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_
