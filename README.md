@@ -33,8 +33,8 @@ _features that make project stand out_
 
 ## Specifications
 
-* _The program gives an alert and does nothing if user inputs a non-numeric number character_
-  * _Example Input: abc_
+* _The program gives an alert and does nothing if user inputs a non-numeric number character or leaves field blank_
+  * _Example Input: ""_
   * _Example Output: alert: "No number inputted. Please enter a number in space provided."_
 * _The program returns a range of numbers from 0 to the users inputted number_
   * _Example Input: "4"_
@@ -45,7 +45,7 @@ _features that make project stand out_
 * _The program replaces "Boop!" for all numbers that contain a "2" and returns the range of numbers from 0 to the input number._
   * _Example Input: "4"_
   * _Example Output: "0, Beep!, Boop!, 3, 4"_
-* _The program replaces "I'm sorry, Dave.  I'm afraid I can't do that" for all numbers that contain a "3" and returns the range of numbers from 0 to the input number._
+* _The program replaces "I'm sorry, ...  I'm afraid I can't do that" for all numbers that contain a "3" and returns the range of numbers from 0 to the input number._
   * _Example Input: "4"_
   * _Example Output: "0, Beep!, Boop!, I'm sorry..., 4"_
 * _The program prioritizes replacing "2" and "3" over replacing "1" if both digits are in the same number_
@@ -54,6 +54,12 @@ _features that make project stand out_
 * _The program prioritizes replacing "3" over replacing "2" if both digits are in the same number_
   * _Example Input: "23"_
   * _Example Output: "0, Beep!, Boop!, I'm sorry..., 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, I'm sorry..., Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, I'm sorry..."_
+* _The program uses name user input in field during "I'm sorry..." string if given, or uses default name "Dave" if left blank._
+  * _Example Input: "Human"_
+  * _Example Output: "I'm sorry Human. I'm afraid I can't do that."_
+* _The program will show output in reverse order if the button to reverse order is pushed._
+  * _Example Input: "5"_
+  * _Example Output: "5, 4, I'm sorry, Dave. I'm afraid I can't do that., Boop!, Beep!, 0"_
 
 ## Screenshots
 _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_

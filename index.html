@@ -18,11 +18,17 @@
         <form id="inputForm">
 
           <div class="form-group">
+            <label for="name">Input human name here:</label>
+            <input type="text" name="nameInput" class="form-control" id="name">
+          </div>
+
+          <div class="form-group">
             <label for="input">Input a number to receive a range from 0 to that number!</label>
             <input type="number" name="userInput" class="form-control" id="inputNumber">
           </div>
 
-          <button type="submit">Receive Output. Beep Boop!</button>
+          <button type="submit" class="btn" id="submitButton">Receive Output. Beep Boop!</button>
+          <button type="submit" class="btn" id="reverseButton">!Boop Beep Output Reverse</button>
         </form>
 
       </div> <!--End of inputArea-->

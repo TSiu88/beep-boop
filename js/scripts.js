@@ -12,14 +12,19 @@ function numberCheck(input){
 }
 
 //Replace digits with strings if fits requirements
-function numberConverter(input){
+function numberConverter(input, name){
   var numberArray = [];
+
+  if(name === ""){
+    name = "Dave";
+  }
+
   for(var i=0; i <=input; i++){
 
     var digitArray = i.toString().split("");
 
     if(digitArray.includes("3")){
-      numberArray[i] = " I'm sorry, Dave.  I'm afraid I can't do that."
+      numberArray[i] = " I'm sorry, " + name + ".  I'm afraid I can't do that.";
     }
     else if(digitArray.includes("2")){
       numberArray[i] = " Boop!";
@@ -34,24 +39,39 @@ function numberConverter(input){
   return numberArray;
 }
 
+function reverseArray(array){
+  return array.reverse();
+}
+
 //USER INTERFACE LOGIC HERE
 $(document).ready(function(){
-  $("#inputForm").submit(function(event){
+  $(".btn").on("click", function(){
     event.preventDefault();
 
+    var userName = $("#name").val();
     var userInput = $("#inputNumber").val();
     var isANumber = numberCheck(userInput);
     
 
     if (isANumber){
-      var convertedArray = numberConverter(userInput);
+      var convertedArray = numberConverter(userInput, userName);
     }
     else{
       alert("No number inputted.  Please enter a number in space provided.");
     }
 
     $(".outputArea").show();
-    $("#outputString").text(convertedArray);
+    
+    var buttonId = this.id;
+    if (buttonId === "reverseButton"){
+      var reversedArray = reverseArray(convertedArray);
+      $("#outputString").text("");
+      $("#outputString").text(reversedArray);
+    }
+    else if(buttonId === "submitButton"){
+      $("#outputString").text("");
+      $("#outputString").text(convertedArray);
+    }
 
   });
 });
