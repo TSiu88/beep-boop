@@ -45,6 +45,10 @@ img{
   height: 200px;
 }
 
+a{
+  color: #2a385b;
+}
+
 blockquote footer{
   color:  #f0f0f5;
 }
@@ -56,7 +60,6 @@ blockquote footer{
   margin-top: 15px;
   background-color: #85c0f9;
   border: #44749d groove 4px;
-
 }
 
 .jumbotron h1{
@@ -117,6 +120,10 @@ blockquote footer{
   background-color: #a95aa1;
   border-radius: 10px;
   border: #601a4a ridge 3px;
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 @keyframes wiggle{

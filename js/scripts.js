@@ -19,6 +19,17 @@ function numberConverter(input, name){
     name = "Dave";
   }
 
+  if(input.includes("5")){
+    document.getElementById("image").src="img/cake.jpg";
+    document.getElementById("image").title="The Cake is a Lie.";
+    document.getElementById("image").alt="cake";
+  }
+  else{
+    document.getElementById("image").src="img/robot.png";
+    document.getElementById("image").title="Candy...Candy...Candy...";
+    document.getElementById("image").alt="robot";
+  }
+
   for(var i=0; i <=input; i++){
 
     var digitArray = i.toString().split("");
@@ -57,30 +68,29 @@ $(document).ready(function(){
 
     if (isANumber){
       var convertedArray = numberConverter(userInput, userName);
+
+      $(".outputArea").slideDown();
+      $("#outputString").text("");
+      $(".upDown").text("");
+      $("#number").text("");
+      
+      var buttonId = this.id;
+      if (buttonId === "reverseButton"){
+        var reversedArray = reverseArray(convertedArray);
+        outputText = reversedArray.join();
+        $("#outputString").append(outputText);
+        $(".upDown").text("DOWN from");
+      }
+      else if(buttonId === "submitButton"){
+        outputText = convertedArray.join();
+        $("#outputString").append(outputText);
+        $(".upDown").text("UP to");
+      }
+      $("#number").text(userInput);
     }
     else{
-      alert("No number inputted.  Please enter a number in space provided.");
+      alert("No valid number inputted.  Please enter a number in space provided.");
     }
-
-    $(".outputArea").slideDown();
-    $("#outputString").text("");
-    $(".upDown").text("");
-    $("#number").text("");
-    
-    var buttonId = this.id;
-    if (buttonId === "reverseButton"){
-      var reversedArray = reverseArray(convertedArray);
-      outputText = reversedArray.join();
-      $("#outputString").append(outputText);
-      $(".upDown").text("DOWN from");
-    }
-    else if(buttonId === "submitButton"){
-      outputText = convertedArray.join();
-      $("#outputString").append(outputText);
-      $(".upDown").text("UP to");
-    }
-    $("#number").text(userInput);
-
 
   });
 });

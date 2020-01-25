@@ -20,20 +20,20 @@
 
             <div class="form-group">
               <label for="name">Input human name here:</label>
-              <input type="text" name="nameInput" class="form-control" id="name">
+              <input type="text" name="nameInput" class="form-control" title="Examples of human names are Dave or Bob, NOT HAL or GlaDOS" id="name">
             </div>
   
             <div class="form-group">
-              <label for="input">Input a number to receive a range to that number!</label>
+              <label for="input">Input a number to receive a range</label>
               <input type="number" name="userInput" class="form-control" id="inputNumber">
             </div>
   
-            <button type="submit" class="btn btn-info wiggle" id="submitButton">Receive Output. Beep Boop!</button>
-            <button type="submit" class="btn btn-danger wiggle" id="reverseButton">!Boop Beep Output Reverse</button>
+            <button type="submit" class="btn btn-info wiggle" title="Compute output" id="submitButton">Receive Output Beep Boop!</button>
+            <button type="submit" class="btn btn-danger wiggle" title="tuptuo etupmoC" id="reverseButton">!Boop Beep Output Reverse</button>
           </form>
         </div> 
         <div class="pictureSection">
-          <img src="img/robot.png" alt="Robot" title="Candy...candy...candy...">
+          <img src="img/robot.png" alt="Robot" title="Candy...candy...candy..." id="image">
         </div>
          
       </div> <!--End of inputArea-->
@@ -44,17 +44,17 @@
           <h2>Output:</h2>
 
           <h3>Here is the range of numbers you requested <span class="upDown"></span> <span id="number"></span>:</h3>
-
+          <br>
           <p><span id="outputString"></span></p>
-
-          <h4>This output is completely, absolutely correct.  Just a string of numbers.  Nothing strange here.</h4>
+          <hr>
+          <h4>This output is completely, absolutely correct.  Just a string of numbers.  <span class=underline title="No really.  There's nothing here.">Nothing strange here</span>.  <a href="https://starwars.fandom.com/wiki/Star_Wars:_Episode_IV_A_New_Hope" title="Move along.">These aren't the droids you're looking for.</a> </h4>
           <blockquote>
             <p>"Glitchy weirdness is a term of endearment, right?"</p>
             <footer>CL4P-TP</footer>
           </blockquote>
         </div>
         
-      </div>
+      </div> <!--End of outputArea-->
 
     </div> <!--End of container-->
   </body>
