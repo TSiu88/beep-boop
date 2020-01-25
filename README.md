@@ -70,9 +70,11 @@ _Several different design features were used on this page which I had no experie
 
 ## Screenshots
 _Here is a snippet of what the input looks like:_
+
 ![Snippet of input fields](img/snippet1.png)
 
 _Here is a preview of what the output looks like:_
+
 ![Snippet of output box](img/snippet2.png)
 
 ## Known Bugs
